@@ -1,4 +1,4 @@
 RefreshScroll
 =============
 
-Pull to refresh for scroll view, such as tableview and collectionview.
+Pull to refresh scroll view, such as tableview and collectionview.
