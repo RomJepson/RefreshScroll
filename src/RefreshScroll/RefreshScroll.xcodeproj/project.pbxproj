@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B28B1B7181BA37D00A30C74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B28B1B6181BA37D00A30C74 /* Foundation.framework */; };
+		3B28B1CD181BA3D800A30C74 /* RJRefreshScrollParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28B1C6181BA3D800A30C74 /* RJRefreshScrollParameter.m */; };
+		3B28B1CE181BA3D800A30C74 /* RJRefreshScrollFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28B1CA181BA3D800A30C74 /* RJRefreshScrollFooterView.m */; };
+		3B28B1CF181BA3D800A30C74 /* RJRefreshScrollHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28B1CC181BA3D800A30C74 /* RJRefreshScrollHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B28B1B1181BA37D00A30C74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3B28B1B3181BA37D00A30C74 /* libRefreshScroll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRefreshScroll.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B28B1B6181BA37D00A30C74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B28B1BA181BA37D00A30C74 /* RefreshScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RefreshScroll-Prefix.pch"; sourceTree = "<group>"; };
+		3B28B1C5181BA3D800A30C74 /* RJRefreshScrollParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollParameter.h; sourceTree = "<group>"; };
+		3B28B1C6181BA3D800A30C74 /* RJRefreshScrollParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollParameter.m; sourceTree = "<group>"; };
+		3B28B1C7181BA3D800A30C74 /* RJRefreshState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshState.h; sourceTree = "<group>"; };
+		3B28B1C9181BA3D800A30C74 /* RJRefreshScrollFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollFooterView.h; sourceTree = "<group>"; };
+		3B28B1CA181BA3D800A30C74 /* RJRefreshScrollFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollFooterView.m; sourceTree = "<group>"; };
+		3B28B1CB181BA3D800A30C74 /* RJRefreshScrollHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollHeaderView.h; sourceTree = "<group>"; };
+		3B28B1CC181BA3D800A30C74 /* RJRefreshScrollHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollHeaderView.m; sourceTree = "<group>"; };
+		3B28B1D1181BAA0D00A30C74 /* RJSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSystem.h; sourceTree = "<group>"; };
+		3B28B1D2181BAA0D00A30C74 /* RJUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJUIKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B28B1B0181BA37D00A30C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B28B1B7181BA37D00A30C74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B28B1AA181BA37D00A30C74 = {
+			isa = PBXGroup;
+			children = (
+				3B28B1B8181BA37D00A30C74 /* RefreshScroll */,
+				3B28B1B5181BA37D00A30C74 /* Frameworks */,
+				3B28B1B4181BA37D00A30C74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B28B1B4181BA37D00A30C74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B28B1B3181BA37D00A30C74 /* libRefreshScroll.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B28B1B5181BA37D00A30C74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B28B1B6181BA37D00A30C74 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B28B1B8181BA37D00A30C74 /* RefreshScroll */ = {
+			isa = PBXGroup;
+			children = (
+				3B28B1C4181BA3D800A30C74 /* Entity */,
+				3B28B1D0181BAA0D00A30C74 /* Utils */,
+				3B28B1C8181BA3D800A30C74 /* Views */,
+				3B28B1B9181BA37D00A30C74 /* Supporting Files */,
+			);
+			path = RefreshScroll;
+			sourceTree = "<group>";
+		};
+		3B28B1B9181BA37D00A30C74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B28B1BA181BA37D00A30C74 /* RefreshScroll-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B28B1C4181BA3D800A30C74 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3B28B1C5181BA3D800A30C74 /* RJRefreshScrollParameter.h */,
+				3B28B1C6181BA3D800A30C74 /* RJRefreshScrollParameter.m */,
+				3B28B1C7181BA3D800A30C74 /* RJRefreshState.h */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3B28B1C8181BA3D800A30C74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B28B1C9181BA3D800A30C74 /* RJRefreshScrollFooterView.h */,
+				3B28B1CA181BA3D800A30C74 /* RJRefreshScrollFooterView.m */,
+				3B28B1CB181BA3D800A30C74 /* RJRefreshScrollHeaderView.h */,
+				3B28B1CC181BA3D800A30C74 /* RJRefreshScrollHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B28B1D0181BAA0D00A30C74 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3B28B1D1181BAA0D00A30C74 /* RJSystem.h */,
+				3B28B1D2181BAA0D00A30C74 /* RJUIKit.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B28B1B2181BA37D00A30C74 /* RefreshScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B28B1C1181BA37D00A30C74 /* Build configuration list for PBXNativeTarget "RefreshScroll" */;
+			buildPhases = (
+				3B28B1AF181BA37D00A30C74 /* Sources */,
+				3B28B1B0181BA37D00A30C74 /* Frameworks */,
+				3B28B1B1181BA37D00A30C74 /* CopyFiles */,
+				3BD5CD44181BB3CC00A9F507 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RefreshScroll;
+			productName = RefreshScroll;
+			productReference = 3B28B1B3181BA37D00A30C74 /* libRefreshScroll.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B28B1AB181BA37D00A30C74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Youyi Zhang";
+			};
+			buildConfigurationList = 3B28B1AE181BA37D00A30C74 /* Build configuration list for PBXProject "RefreshScroll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B28B1AA181BA37D00A30C74;
+			productRefGroup = 3B28B1B4181BA37D00A30C74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B28B1B2181BA37D00A30C74 /* RefreshScroll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BD5CD44181BB3CC00A9F507 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 更新头文件\n. ${PROJECT_DIR}/../update_inc_files.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B28B1AF181BA37D00A30C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B28B1CD181BA3D800A30C74 /* RJRefreshScrollParameter.m in Sources */,
+				3B28B1CE181BA3D800A30C74 /* RJRefreshScrollFooterView.m in Sources */,
+				3B28B1CF181BA3D800A30C74 /* RJRefreshScrollHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B28B1BF181BA37D00A30C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3B28B1C0181BA37D00A30C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B28B1C2181BA37D00A30C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(PLATFORM_NAME)";
+				DSTROOT = /tmp/RefreshScroll.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RefreshScroll/RefreshScroll-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(PROJECT_DIR)/../../lib";
+			};
+			name = Debug;
+		};
+		3B28B1C3181BA37D00A30C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(PLATFORM_NAME)";
+				DSTROOT = /tmp/RefreshScroll.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RefreshScroll/RefreshScroll-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(PROJECT_DIR)/../../lib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B28B1AE181BA37D00A30C74 /* Build configuration list for PBXProject "RefreshScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B28B1BF181BA37D00A30C74 /* Debug */,
+				3B28B1C0181BA37D00A30C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B28B1C1181BA37D00A30C74 /* Build configuration list for PBXNativeTarget "RefreshScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B28B1C2181BA37D00A30C74 /* Debug */,
+				3B28B1C3181BA37D00A30C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B28B1AB181BA37D00A30C74 /* Project object */;
+}
