@@ -8,8 +8,8 @@
 
 #import "RJPullDownTableViewController.h"
 
+#import "RJRefreshScrollHeaderParameter.h"
 #import "RJRefreshScrollHeaderView.h"
-#import "RJRefreshScrollParameter.h"
 #import "RJUIKit.h"
 
 @interface RJPullDownTableViewController () <RJRefreshScrollHeaderDelegate> {
@@ -40,21 +40,9 @@
         CGRect frame = self.tableView.bounds;
         frame.origin.y = 0 - frame.size.height;
         
-        RJRefreshScrollParameter *parameter = [[RJRefreshScrollParameter alloc] init];
-        parameter.topDelta = 64.0f;
-        parameter.backgroundColor = RJColorRGB(226.0, 231.0, 237.0);
-        parameter.textColor = RJColorRGB(87.0, 108.0, 137.0);
-        parameter.activityIndicatorColor = parameter.textColor;
+        RJRefreshScrollHeaderParameter *parameter = [[RJRefreshScrollHeaderParameter alloc] init];
         parameter.arrowFileName = @"blue_arrow.png";
-        parameter.pullPrompt = @"Pull down to refresh...";
-        parameter.releasePrompt = @"Release to refresh...";
-        parameter.loadingPrompt = @"Loading...";
-        parameter.lastRefreshPrompt = @"Last Updated";
-        parameter.lastRefreshKey = @"pullDownTableViewRefreshKey";
-        parameter.amPrompt = @"AM";
-        parameter.pmPrompt = @"PM";
-        
-		RJRefreshScrollHeaderView *view = [[RJRefreshScrollHeaderView alloc] initWithFrame:frame
+        RJRefreshScrollHeaderView *view = [[RJRefreshScrollHeaderView alloc] initWithFrame:frame
                                                                                  parameter:parameter];
         [parameter release];
 		view.delegate = self;

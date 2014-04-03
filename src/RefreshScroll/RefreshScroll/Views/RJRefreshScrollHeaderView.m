@@ -1,6 +1,6 @@
 //
 //  RJRefreshTableHeaderView.m
-//  RefreshScrollDemo
+//  RefreshScroll
 //
 //  Created by Youyi Zhang on 13-9-30.
 //  Copyright (c) 2013 Youyi Zhang. All rights reserved.
@@ -10,7 +10,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#import "RJRefreshScrollParameter.h"
+#import "RJRefreshScrollHeaderParameter.h"
 #import "RJSystem.h"
 #import "RJUIKit.h"
 
@@ -28,7 +28,7 @@
 	UIActivityIndicatorView *_aivActivityIndicator;
 }
 
-@property(nonatomic, retain) RJRefreshScrollParameter *parameter;
+@property(nonatomic, retain) RJRefreshScrollHeaderParameter *parameter;
 
 - (void)setState:(RJRefreshState)state;
 - (BOOL)needRefreshScrollView:(UIScrollView *)scrollView;
@@ -41,9 +41,11 @@
 @synthesize delegate = _delegate;
 
 #pragma mark - Memory Management
-- (RJRefreshScrollHeaderView *)initWithFrame:(CGRect)frame parameter:(RJRefreshScrollParameter *)parameter {
+- (id)initWithFrame:(CGRect)frame parameter:(RJRefreshScrollHeaderParameter *)parameter {
     if (self = [super initWithFrame:frame]) {
-        self.parameter = parameter;
+        if (nil == self.parameter) {
+            _parameter = [[RJRefreshScrollHeaderParameter alloc] init];
+        }
 
 		self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		self.backgroundColor = parameter.backgroundColor;

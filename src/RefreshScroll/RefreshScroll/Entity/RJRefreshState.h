@@ -1,6 +1,6 @@
 //
 //  RJRefreshState.h
-//  RefreshScrollDemo
+//  RefreshScroll
 //
 //  Created by Youyi Zhang on 13-09-30.
 //  Copyright (c) 2013 Youyi Zhang. All rights reserved.

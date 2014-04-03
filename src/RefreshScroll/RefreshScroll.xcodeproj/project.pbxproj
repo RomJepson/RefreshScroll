@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3B28B1B7181BA37D00A30C74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B28B1B6181BA37D00A30C74 /* Foundation.framework */; };
-		3B28B1CD181BA3D800A30C74 /* RJRefreshScrollParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28B1C6181BA3D800A30C74 /* RJRefreshScrollParameter.m */; };
+		3B28B1CD181BA3D800A30C74 /* RJRefreshScrollHeaderParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28B1C6181BA3D800A30C74 /* RJRefreshScrollHeaderParameter.m */; };
 		3B28B1CE181BA3D800A30C74 /* RJRefreshScrollFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28B1CA181BA3D800A30C74 /* RJRefreshScrollFooterView.m */; };
 		3B28B1CF181BA3D800A30C74 /* RJRefreshScrollHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28B1CC181BA3D800A30C74 /* RJRefreshScrollHeaderView.m */; };
+		3BA919ED18ED2A06008D7F5C /* RJRefreshScrollFooterParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA919EC18ED2A06008D7F5C /* RJRefreshScrollFooterParameter.m */; };
+		3BA919F018ED3253008D7F5C /* RJRefreshScrollParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA919EF18ED3253008D7F5C /* RJRefreshScrollParameter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +31,8 @@
 		3B28B1B3181BA37D00A30C74 /* libRefreshScroll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRefreshScroll.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B28B1B6181BA37D00A30C74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B28B1BA181BA37D00A30C74 /* RefreshScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RefreshScroll-Prefix.pch"; sourceTree = "<group>"; };
-		3B28B1C5181BA3D800A30C74 /* RJRefreshScrollParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollParameter.h; sourceTree = "<group>"; };
-		3B28B1C6181BA3D800A30C74 /* RJRefreshScrollParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollParameter.m; sourceTree = "<group>"; };
+		3B28B1C5181BA3D800A30C74 /* RJRefreshScrollHeaderParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollHeaderParameter.h; sourceTree = "<group>"; };
+		3B28B1C6181BA3D800A30C74 /* RJRefreshScrollHeaderParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollHeaderParameter.m; sourceTree = "<group>"; };
 		3B28B1C7181BA3D800A30C74 /* RJRefreshState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshState.h; sourceTree = "<group>"; };
 		3B28B1C9181BA3D800A30C74 /* RJRefreshScrollFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollFooterView.h; sourceTree = "<group>"; };
 		3B28B1CA181BA3D800A30C74 /* RJRefreshScrollFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollFooterView.m; sourceTree = "<group>"; };
@@ -38,6 +40,10 @@
 		3B28B1CC181BA3D800A30C74 /* RJRefreshScrollHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollHeaderView.m; sourceTree = "<group>"; };
 		3B28B1D1181BAA0D00A30C74 /* RJSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSystem.h; sourceTree = "<group>"; };
 		3B28B1D2181BAA0D00A30C74 /* RJUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJUIKit.h; sourceTree = "<group>"; };
+		3BA919EB18ED2A06008D7F5C /* RJRefreshScrollFooterParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollFooterParameter.h; sourceTree = "<group>"; };
+		3BA919EC18ED2A06008D7F5C /* RJRefreshScrollFooterParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollFooterParameter.m; sourceTree = "<group>"; };
+		3BA919EE18ED3253008D7F5C /* RJRefreshScrollParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRefreshScrollParameter.h; sourceTree = "<group>"; };
+		3BA919EF18ED3253008D7F5C /* RJRefreshScrollParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRefreshScrollParameter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,12 @@
 		3B28B1C4181BA3D800A30C74 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				3B28B1C5181BA3D800A30C74 /* RJRefreshScrollParameter.h */,
-				3B28B1C6181BA3D800A30C74 /* RJRefreshScrollParameter.m */,
+				3BA919EB18ED2A06008D7F5C /* RJRefreshScrollFooterParameter.h */,
+				3BA919EC18ED2A06008D7F5C /* RJRefreshScrollFooterParameter.m */,
+				3B28B1C5181BA3D800A30C74 /* RJRefreshScrollHeaderParameter.h */,
+				3B28B1C6181BA3D800A30C74 /* RJRefreshScrollHeaderParameter.m */,
+				3BA919EE18ED3253008D7F5C /* RJRefreshScrollParameter.h */,
+				3BA919EF18ED3253008D7F5C /* RJRefreshScrollParameter.m */,
 				3B28B1C7181BA3D800A30C74 /* RJRefreshState.h */,
 			);
 			path = Entity;
@@ -194,8 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B28B1CD181BA3D800A30C74 /* RJRefreshScrollParameter.m in Sources */,
+				3B28B1CD181BA3D800A30C74 /* RJRefreshScrollHeaderParameter.m in Sources */,
 				3B28B1CE181BA3D800A30C74 /* RJRefreshScrollFooterView.m in Sources */,
+				3BA919ED18ED2A06008D7F5C /* RJRefreshScrollFooterParameter.m in Sources */,
+				3BA919F018ED3253008D7F5C /* RJRefreshScrollParameter.m in Sources */,
 				3B28B1CF181BA3D800A30C74 /* RJRefreshScrollHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

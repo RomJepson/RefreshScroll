@@ -1,6 +1,6 @@
 //
 //  RJUIKit.h
-//  RefreshScrollDemo
+//  RefreshScroll
 //
 //  It defines some macros about iOS UI's API in this file.
 //

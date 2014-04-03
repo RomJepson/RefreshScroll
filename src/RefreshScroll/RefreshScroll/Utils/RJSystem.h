@@ -1,6 +1,6 @@
 //
 //  RJSystem.h
-//  RefreshScrollDemo
+//  RefreshScroll
 //
 //  It defines some macros about iOS system's API in this file.
 //

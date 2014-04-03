@@ -1,6 +1,6 @@
 //
 //  RJRefreshScrollHeaderView.h
-//  RefreshScrollDemo
+//  RefreshScroll
 //
 //  Created by Youyi Zhang on 13-9-30.
 //  Copyright (c) 2013 Youyi Zhang. All rights reserved.
@@ -8,7 +8,7 @@
 
 #include "RJRefreshState.h"
 
-@class RJRefreshScrollParameter;
+@class RJRefreshScrollHeaderParameter;
 
 @protocol RJRefreshScrollHeaderDelegate;
 
@@ -28,7 +28,7 @@
  * @param parameter, Other initial parameters.
  * @return, self
  */
-- (RJRefreshScrollHeaderView *)initWithFrame:(CGRect)frame parameter:(RJRefreshScrollParameter *)parameter;
+- (id)initWithFrame:(CGRect)frame parameter:(RJRefreshScrollHeaderParameter *)parameter;
 
 /**
  * Update the last refreshed date, please send "initWithFrame:parameter:" message.

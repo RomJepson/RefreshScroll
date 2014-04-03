@@ -8,9 +8,10 @@
 
 #import "RJPullTableViewController.h"
 
+#import "RJRefreshScrollFooterParameter.h"
 #import "RJRefreshScrollFooterView.h"
+#import "RJRefreshScrollHeaderParameter.h"
 #import "RJRefreshScrollHeaderView.h"
-#import "RJRefreshScrollParameter.h"
 #import "RJUIKit.h"
 
 @interface RJPullTableViewController () <RJRefreshScrollHeaderDelegate, RJRefreshScrollFooterDelegate> {
@@ -47,21 +48,9 @@
 	if (nil == _refreshHeaderView) {
         CGRect frame = self.tableView.bounds;
         frame.origin.y = 0 - frame.size.height;
-		RJRefreshScrollParameter *parameter = [[RJRefreshScrollParameter alloc] init];
-        parameter.topDelta = 64.0f;
-        parameter.backgroundColor = RJColorRGB(226.0, 231.0, 237.0);
-        parameter.textColor = RJColorRGB(87.0, 108.0, 137.0);
-        parameter.activityIndicatorColor = parameter.textColor;
+		RJRefreshScrollHeaderParameter *parameter = [[RJRefreshScrollHeaderParameter alloc] init];
         parameter.arrowFileName = @"blue_arrow.png";
-        parameter.pullPrompt = @"Pull down to refresh...";
-        parameter.releasePrompt = @"Release to refresh...";
-        parameter.loadingPrompt = @"Loading...";
-        parameter.lastRefreshPrompt = @"Last Updated";
-        parameter.lastRefreshKey = @"pullDownTableViewRefreshKey";
-        parameter.amPrompt = @"AM";
-        parameter.pmPrompt = @"PM";
-        
-		RJRefreshScrollHeaderView *view = [[RJRefreshScrollHeaderView alloc] initWithFrame:frame
+        RJRefreshScrollHeaderView *view = [[RJRefreshScrollHeaderView alloc] initWithFrame:frame
                                                                                  parameter:parameter];
         [parameter release];
 		view.delegate = self;
@@ -153,20 +142,8 @@
     if (nil != _refreshFooter) {
         _refreshFooter.frame = frame;
     } else {
-        RJRefreshScrollParameter *parameter = [[RJRefreshScrollParameter alloc] init];
-        parameter.bottomDelta = .0f;
-        parameter.backgroundColor = RJColorRGB(226.0, 231.0, 237.0);
-        parameter.textColor = RJColorRGB(87.0, 108.0, 137.0);
-        parameter.activityIndicatorColor = parameter.textColor;
+        RJRefreshScrollFooterParameter *parameter = [[RJRefreshScrollFooterParameter alloc] init];
         parameter.arrowFileName = @"blue_arrow.png";
-        parameter.pullPrompt = @"Pull up to load more...";
-        parameter.releasePrompt = @"Release to load more...";
-        parameter.loadingPrompt = @"Loading...";
-        parameter.lastRefreshPrompt = @"Last Updated";
-        parameter.lastRefreshKey = @"pullUpTableViewRefreshKey";
-        parameter.amPrompt = @"AM";
-        parameter.pmPrompt = @"PM";
-        
         RJRefreshScrollFooterView *refreshFooter = [[RJRefreshScrollFooterView alloc] initWithFrame:frame parameter:parameter];
         [parameter release];
         
