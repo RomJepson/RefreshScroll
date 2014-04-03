@@ -2,7 +2,7 @@
 //  RJUIKit.h
 //  RefreshScrollDemo
 //
-//  It defines some macros about iOS system's API in this file.
+//  It defines some macros about iOS UI's API in this file.
 //
 //  Created by Youyi Zhang on 13-10-12.
 //  Copyright (c) 2013 Youyi Zhang. All rights reserved.

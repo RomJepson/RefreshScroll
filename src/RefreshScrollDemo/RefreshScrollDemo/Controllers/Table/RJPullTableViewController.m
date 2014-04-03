@@ -49,7 +49,6 @@
         frame.origin.y = 0 - frame.size.height;
 		RJRefreshScrollParameter *parameter = [[RJRefreshScrollParameter alloc] init];
         parameter.topDelta = 64.0f;
-        parameter.bottomDelta = 49.0f;
         parameter.backgroundColor = RJColorRGB(226.0, 231.0, 237.0);
         parameter.textColor = RJColorRGB(87.0, 108.0, 137.0);
         parameter.activityIndicatorColor = parameter.textColor;
@@ -155,8 +154,7 @@
         _refreshFooter.frame = frame;
     } else {
         RJRefreshScrollParameter *parameter = [[RJRefreshScrollParameter alloc] init];
-        parameter.topDelta = 64.0f;
-        parameter.bottomDelta = 49.0f;
+        parameter.bottomDelta = .0f;
         parameter.backgroundColor = RJColorRGB(226.0, 231.0, 237.0);
         parameter.textColor = RJColorRGB(87.0, 108.0, 137.0);
         parameter.activityIndicatorColor = parameter.textColor;

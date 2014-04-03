@@ -221,19 +221,13 @@
 }
 
 - (void)setScrollView:(UIScrollView *)scrollView hideFooter:(BOOL)hideFooter {
-    if (!hideFooter) {
-        if (RJSYS_VER_LESS_THAN_7) {
-            scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, REFRESH_FOOTER_HEIGHT, 0.0f);
-        } else {
-            scrollView.contentInset = UIEdgeInsetsMake(self.parameter.topDelta, 0.0f, REFRESH_FOOTER_HEIGHT + self.parameter.bottomDelta, 0.0f);
-        }
+    UIEdgeInsets contentInset = scrollView.contentInset;
+    if (hideFooter) {
+        contentInset.bottom = RJSYS_VER_LESS_THAN_7 ? 0 : self.parameter.bottomDelta;
     } else {
-        if (RJSYS_VER_LESS_THAN_7) {
-            scrollView.contentInset = UIEdgeInsetsZero;
-        }  else {
-            scrollView.contentInset = UIEdgeInsetsMake(self.parameter.topDelta, 0.0f, self.parameter.bottomDelta, 0.0f);
-        }
+        contentInset.bottom = RJSYS_VER_LESS_THAN_7 ? REFRESH_FOOTER_HEIGHT : REFRESH_FOOTER_HEIGHT + self.parameter.bottomDelta;
     }
+    scrollView.contentInset = contentInset;
 }
 
 @end

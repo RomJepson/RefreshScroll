@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Youyi Zhang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface RJPullDownTableViewController : UITableViewController
 
 @end
