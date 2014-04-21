@@ -43,6 +43,7 @@
 #pragma mark - Memory Management
 - (id)initWithFrame:(CGRect)frame parameter:(RJRefreshScrollHeaderParameter *)parameter {
     if (self = [super initWithFrame:frame]) {
+        self.parameter = parameter;
         if (nil == self.parameter) {
             _parameter = [[RJRefreshScrollHeaderParameter alloc] init];
         }
