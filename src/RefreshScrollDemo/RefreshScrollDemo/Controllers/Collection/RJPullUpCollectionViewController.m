@@ -67,6 +67,10 @@
 
 #pragma mark - Private methods
 - (void)loadMoreData {
+    CGRect frame = self.collectionView.frame;
+    if (frame.size.height >= self.collectionView.contentSize.height) {
+        return;
+    }
     _isLoadingMore = YES;
     [self performSelector:@selector(didLoadMoreData) withObject:nil afterDelay:3];
 }
@@ -75,7 +79,7 @@
     _isLoadingMore = NO;
     
     CGRect frame = self.collectionView.frame;
-    frame.origin.y = MAX(frame.size.height, self.collectionView.contentSize.height);
+    frame.origin.y = self.collectionView.contentSize.height;
     if (nil != _refreshFooter) {
         _refreshFooter.frame = frame;
     } else {

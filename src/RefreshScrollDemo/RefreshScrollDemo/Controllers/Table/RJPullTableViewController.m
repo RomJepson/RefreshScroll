@@ -130,6 +130,10 @@
 }
 
 - (void)loadMoreData {
+    CGRect frame = self.tableView.frame;
+    if (frame.size.height >= self.tableView.contentSize.height) {
+        return;
+    }
     _isLoadingMore = YES;
     [self performSelector:@selector(didLoadMoreData) withObject:nil afterDelay:3];
 }
@@ -138,7 +142,7 @@
     _isLoadingMore = NO;
     
     CGRect frame = self.tableView.frame;
-    frame.origin.y = MAX(frame.size.height, self.tableView.contentSize.height);
+    frame.origin.y = self.tableView.contentSize.height;
     if (nil != _refreshFooter) {
         _refreshFooter.frame = frame;
     } else {
